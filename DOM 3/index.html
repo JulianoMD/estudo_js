@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Numeros</title>
+    <style>
+        body {
+            color: white;
+            font: 18pt arial;
+            background-color: rgb(171, 12, 12);
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        input {
+            font: 16pt arial;
+            width: 200px;
+        }
+
+        div.numeros {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        div.input-numeros {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+        }
+
+        div.botao {
+            margin-top: 80px;
+            display: flex;
+            justify-content: center;
+        }
+
+        div#res {
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+            font-style: italic;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Somando Valores</h1>
+    <div class="numeros">
+        <div class="input-numeros">
+            <input type="number" name="txtn1" id="txtn1">
+            and
+            <input type="number" name="txtn2" id="txtn2">
+        </div>
+    </div>
+    <div class="botao">
+        <input type="button" value="Somar" onclick="somar()">
+        <input type="button" value="Subtrair" onclick="subtrair()">
+        <input type="button" value="Multiplicar" onclick="multiplicacao()">
+        <input type="button" value="Dividir" onclick="divisao()">
+    </div>
+    <div id="res">Resultado:</div>
+
+    <script>
+        var tn1 = document.querySelector('input#txtn1');
+        var tn2 = document.querySelector('input#txtn2');
+        var res = document.querySelector('div#res');
+        var n1 = Number(tn1.value);
+        var n2 = Number(tn2.value);
+
+        function getValores() {
+            return [(Number(tn1.value)), (Number(tn2.value))];
+        }
+
+        function somar() {
+            const [n1, n2] = getValores();
+            var soma = n1 + n2;
+            res.innerHTML = `A soma entre ${n1} e ${n2} resulta em: <strong>${soma}<strong/>`;
+        }
+
+        function subtrair() {
+            const [n1, n2] = getValores();
+            var subtracao = n1 - n2;
+            res.innerHTML = `A subtração entre ${n1} e ${n2} resulta em: <strong>${subtracao}</strong>`;
+        }
+
+        function multiplicacao() {
+            const [n1, n2] = getValores();
+            var multi = n1 * n2;
+            res.innerHTML = `A multiplicação entre ${n1} e ${n2} resulta em: <strong>${multi}</strong>`;
+        }
+
+        function divisao() {
+            const [n1, n2] = getValores();
+            var div = n1 / n2;
+            res.innerHTML = `A divisão entre ${n1} e ${n2} resulta em: <strong>${div}</strong>`;
+        }
+    </script>
+</body>
+
+</html>
