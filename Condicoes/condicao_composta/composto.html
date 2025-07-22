@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação Brasileiro</title>
+</head>
+
+<body>
+    <h1>Verificando se o sujeito é brasileiro</h1>
+    <p>Digite um pais para verificação se o individuo é estrangeiro ex: "Bélgica", "Alemanha".</p>
+    <input type="text" name="sujeito" id="sujeito">
+    <input type="button" value="Verificação" onclick="clicar()">
+    <div id="res">Resultado</div>
+    <script>
+        function clicar() {
+            var suj = document.querySelector('input#sujeito')
+            var res = document.querySelector('div#res')
+            var pais = suj.value.trim().toLowerCase()
+            if (pais === 'brasil' || pais === 'brazil') {
+                res.innerHTML = 'O sujeito é brasileiro'
+            } else {
+                res.innerHTML = 'O sujeito é estrangeiro'
+            }
+        }
+    </script>
+</body>
+
+</html>
