@@ -8,7 +8,7 @@ body {
 }
 
 div#area {
-    font: normal 20pt Arial;
+    font: normal 20pt jetbrains mono;
     background-color: rgb(48, 125, 123);
     color: black;
     width: 200px;
