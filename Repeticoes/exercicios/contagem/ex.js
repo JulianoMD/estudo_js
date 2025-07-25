@@ -1,7 +1,7 @@
 function calcular() {
-    const inputInicio = document.querySelector('#inicio');
-    const inputFim = document.querySelector('#fim');
-    const inputPasso = document.querySelector('#passo');
+    const inputInicio = document.querySelector('#txtinicio');
+    const inputFim = document.querySelector('#txtfim');
+    const inputPasso = document.querySelector('#txtpasso');
     const res = document.querySelector('#res');
 
     const inicio = +inputInicio.value;
@@ -9,7 +9,7 @@ function calcular() {
     let passo = +inputPasso.value;
 
     if (inputInicio.value.trim() === '' || inputFim.value.trim() === '' || inputPasso.value.trim() === '') {
-        alert('[ERRO] Preencha com algum valor')
+        alert('[ERRO] Preencha todos os campos com algum valor')
         return
     }
 
