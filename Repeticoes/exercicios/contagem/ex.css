@@ -1,0 +1,24 @@
+body {
+    background-color: rgba(177, 139, 36, 0.794);
+    font: normal 15pt jetbrains mono monospace;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: rgb(246, 251, 255);
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.376);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+}
