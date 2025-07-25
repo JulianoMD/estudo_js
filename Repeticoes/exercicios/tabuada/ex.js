@@ -3,7 +3,6 @@ function botao() {
     let input_tab = document.querySelector('#seltab')
 
     let num = +input_num.value
-    let tab = +input_tab.valur
 
     if (input_num.value.trim() === '') {
         alert('[ERRO] Preencha os dados do campo numero')
