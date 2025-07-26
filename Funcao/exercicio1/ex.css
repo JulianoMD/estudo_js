@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(20, 32, 32);
+    font: normal 15pt jetbrains mono;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: rgb(246, 251, 255);
+    border-radius: 3%;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.376);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+select {
+    width: 150px;
+}
