@@ -7,4 +7,4 @@ for (let pos = 0; pos < valores.length; pos++) {
 */
 for (let pos in valores) {
     console.log(`A posiçåo ${pos} tem o valor ${valores[pos]}`)
-}
+}   
